@@ -17,15 +17,15 @@ We set up the data frame. Edit the data below to include information about your 
 
 ```{r setup-tibble}
 team_data <- tibble(
-  name = c("Peter Rabbit", "member 1", "member 2", 
-           "member 3", "member 4"),
-  github_username = c("mcgregors-garden", "username 1", "username 2", 
-                      "username 3", "username 4"), 
-  colour = c("powderblue", "colour 1", "colour 2", 
-             "colour 3", "colour 4"),
-  hobby = c("Hopping", "hobby 1", "hobby 2", 
-            "hobby 3", "hobby 4"),
-  favourite_number = c(2, NA, NA, NA, NA)
+  name = c("Toby", "Ben", "Stewart", 
+           "Sophie", "Magnus"),
+  github_username = c("tobycraik", "BWipat", "stewart620", 
+                      "username 3", "MagnusBryce"), 
+  colour = c("blue", "blue", "blue", 
+             "purple", "blue"),
+  hobby = c("Running", "Climbing", "Running", 
+            "Slepping", "Swimming"),
+  favourite_number = c(4, 15, 6, 9, 8)
   )
 
 team_data
@@ -47,16 +47,16 @@ p1
 ```
 
 
-*Remove this text (including the stars), and add your answer for Exercise 18 here.*
+The plot shows the data collected, and presented that data on bar graph
 
 ### Exercises 19
 
 Change the text of the plot title and axis labels.
 
 ```{r labelled-bar-plot}
-p1 + labs(x = "Insert text here", 
-          y = "Insert text here",
-          title = "Insert text here")
+p1 + labs(x = "GitHub Username", 
+          y = "Favourite Number",
+          title = "Group Data Collection")
 ```
 
 *Remove this text (including the stars), and add your answer for Exercise 19 here.*
@@ -69,4 +69,4 @@ p2 <- ggplot(team_data, aes(x = hobby)) +
 p2
 ```
 
-*Remove this text (including the stars) and add your answer for Exercise 20 here.*
+A Pie Chart would be a better way to represent the data collected from the group.
